@@ -904,7 +904,12 @@ const DataMatching = () => {
 
                         <Button
                           onClick={() =>
-                            onImageHandler("prev", csvData, currentTaskData)
+                            onImageHandler(
+                              "prev",
+                              currentIndex,
+                              csvData,
+                              currentTaskData
+                            )
                           }
                           variant="contained"
                           endIcon={<ArrowBackIosIcon />}
@@ -914,7 +919,12 @@ const DataMatching = () => {
 
                         <Button
                           onClick={() =>
-                            onImageHandler("next", csvData, currentTaskData)
+                            onImageHandler(
+                              "next",
+                              currentIndex,
+                              csvData,
+                              currentTaskData
+                            )
                           }
                           variant="contained"
                           endIcon={<ArrowForwardIosIcon />}
